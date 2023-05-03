@@ -9,7 +9,7 @@ import {
   faTruck,
 } from '@fortawesome/free-solid-svg-icons';
 import SearchForm from './SearchForm';
-// import OrderButton from './Order';
+import OrderButton from './Order';
 import ShoppingCart from './ShoppingCart';
 import UserForm from './UserForm';
 import './Header.css';
@@ -83,7 +83,7 @@ export default function Header() {
           <FontAwesomeIcon className="fa-icon" icon={faUser} />
         </button>
       </div>
-      {/* <OrderButton active={activeOrder} /> */}
+      <OrderButton active={activeOrder} />
       <SearchForm active={activeSearch} />
       <ShoppingCart active={activeShoppingCart} />
       <UserForm active={activeUserForm} />

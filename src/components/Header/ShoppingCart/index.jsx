@@ -36,6 +36,11 @@ export default function ShoppingCart(props) {
           <span className="quantity">qty: 1</span>
         </div>
       </div>
+      <div className="box">
+        <button type="button" className="btn">
+          Place Order
+        </button>
+      </div>
     </div>
   );
 }
