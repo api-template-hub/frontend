@@ -1,5 +1,7 @@
 // Products
+/* eslint-disable */
 import React from 'react';
+// import Carousel from 'react-grid-carousel';
 import './Products.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
@@ -20,10 +22,12 @@ export default function Products() {
         <div className="wrapper swiper-wrapper">
           <Swiper
             loop
+            grabCursor={true}
             spaceBetween={20}
-            autoplay={{ delay: 7500, disableOnInteraction: false }}
+            autoplay={{ delay: 7500, disableOnInteraction: true }}
             slidesPerView={1}
             pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
             centeredSlides
             breakpoints={{
               0: {
@@ -112,10 +116,12 @@ export default function Products() {
         <div className="wrapper swiper-wrapper">
           <Swiper
             loop
+            grabCursor={true}
             spaceBetween={20}
-            autoplay={{ delay: 7500, disableOnInteraction: false }}
+            autoplay={{ delay: 7500, disableOnInteraction: true }}
             slidesPerView={1}
             pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
             centeredSlides
             breakpoints={{
               0: {
@@ -202,3 +208,4 @@ export default function Products() {
     </section>
   );
 }
+/* eslint-enable */

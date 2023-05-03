@@ -6,8 +6,10 @@ import {
   faSearch,
   faShoppingCart,
   faUser,
+  faTruck,
 } from '@fortawesome/free-solid-svg-icons';
 import SearchForm from './SearchForm';
+// import OrderButton from './Order';
 import ShoppingCart from './ShoppingCart';
 import UserForm from './UserForm';
 import './Header.css';
@@ -15,6 +17,7 @@ import Navbar from './Navbar';
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState(false);
+  const [activeOrder, setActiveOrder] = useState(false);
   const [activeSearch, setActiveSearch] = useState(false);
   const [activeShoppingCart, setActiveShoppingCart] = useState(false);
   const [activeUserForm, setActiveUserForm] = useState(false);
@@ -29,6 +32,12 @@ export default function Header() {
     setActiveSearch(false);
     setActiveShoppingCart(false);
     setActiveUserForm(false);
+  };
+  const handleOrderButton = () => {
+    setActiveOrder(!activeOrder);
+    setActiveSearch(false);
+    setActiveUserForm(false);
+    setActiveMenu(false);
   };
   const handleSearchButton = () => {
     setActiveSearch(!activeSearch);
@@ -61,6 +70,9 @@ export default function Header() {
         <button type="button" id="menu-btn" onClick={handleMenuButton}>
           <FontAwesomeIcon className="fa-icon" icon={faBars} />
         </button>
+        <button type="button" id="truck-btn" onClick={handleOrderButton}>
+          <FontAwesomeIcon className="fa-icon" icon={faTruck} />
+        </button>
         <button type="button" id="search-btn" onClick={handleSearchButton}>
           <FontAwesomeIcon className="fa-icon" icon={faSearch} />
         </button>
@@ -71,6 +83,7 @@ export default function Header() {
           <FontAwesomeIcon className="fa-icon" icon={faUser} />
         </button>
       </div>
+      {/* <OrderButton active={activeOrder} /> */}
       <SearchForm active={activeSearch} />
       <ShoppingCart active={activeShoppingCart} />
       <UserForm active={activeUserForm} />
