@@ -9,6 +9,7 @@ export default function ShoppingCart(props) {
   const { active } = props;
   return (
     <div className={`shopping-cart ${active ? 'active' : ''}`}>
+      <div><h1>Cart</h1></div>
       <div className="box">
         <FontAwesomeIcon className="trash-icon" icon={faTrash} />
         <img src="image/cart-img-1.png" alt="Product" />

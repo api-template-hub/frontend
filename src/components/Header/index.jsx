@@ -86,7 +86,7 @@ export default function Header() {
         <i>
           <FontAwesomeIcon icon={faShoppingBasket} />
         </i>
-        Sabzi Mandi
+        fresh-n-fast
       </a>
       <Navbar active={activeMenu} />
       <div className="icons">
