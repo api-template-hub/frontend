@@ -31,12 +31,12 @@ export default function Footer() {
             FOLLOW US
           </p>
           <div className="share">
-            <a href="https://www.facebook.com/sakshi.yeole.1ac">
+            <a href="/">
               <i>
                 <FontAwesomeIcon className="fa-icon" icon={faFacebookF} />
               </i>
             </a>
-            <a href="https://twitter.com/AsutkarAyush?t=yDj07l8EWwSH0QPcqXEogQ&s=08">
+            <a href="/">
               <i>
                 <FontAwesomeIcon className="fa-icon" icon={faTwitter} />
               </i>
