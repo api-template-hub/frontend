@@ -77,7 +77,7 @@ export default function Footer() {
             <i>
               <FontAwesomeIcon icon={faMapMarkerAlt} />
             </i>
-            pernambuco, brazil
+            Odhisa, India
           </a>
         </div>
         <div className="box">

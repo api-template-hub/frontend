@@ -38,7 +38,7 @@ export default function ShoppingCart(props) {
       </div>
       <div className="box">
         <button type="button" className="btn">
-          Place Order
+          place order
         </button>
       </div>
     </div>
